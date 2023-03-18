@@ -1,0 +1,12 @@
+﻿@model HomeViewModel
+
+<h1 class="heading">Головна</h1>
+<h2 class="heading">@ViewBag.Ad</h2>
+<div class="list">
+    @{
+        foreach (Advertisement ad in Model.FavAds)
+        {
+            @Html.Partial("AllAds", ad)
+        }
+    }
+</div>

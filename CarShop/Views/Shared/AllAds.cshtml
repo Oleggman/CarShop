@@ -1,0 +1,10 @@
+﻿@model Advertisement
+
+<div class="item">
+    <h2>@Model.Description</h2>
+    <h3>@Model.Brand @Model.Model</h3>
+    <img src=@Model.Img width="500px" height="300px" class="item__img" />
+    <h3>@Model.FullName <br> @Model.Phone</h3>
+    <p class="item__text">Ціна: @Model.Price.ToString("c")</p>
+    <br><p><a class="btn btn-danger" href="#">Детальніше</a></p>
+</div>

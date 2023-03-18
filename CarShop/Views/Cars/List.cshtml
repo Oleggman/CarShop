@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Advertisement>
+
+<br /><br /><br />
+<h2 class="heading">@ViewBag.Ad</h2>
+<hr>
+<div class="list">
+    @{
+        foreach (Advertisement ad in Model.Where(ad => ad.ActivityStatus))
+        {
+            @Html.Partial("AllAds", ad)
+        }
+    }
+</div>
